@@ -7,6 +7,9 @@ function createAddress() {
 
   let address = '';
 
-  address += name;
-  address += ' ' + street;
+  address += name + '<br>';
+  address += street + '<br>';
+  address += city + ', ' + state + ', ' + zip;
+
+  document.getElementById('output').innerHTML = address;
 }
