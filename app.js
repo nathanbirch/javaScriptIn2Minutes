@@ -1,8 +1,7 @@
 function computeAreaOfCircle() {
-  let l = parseFloat(document.getElementById('length').value);
-  let w = parseFloat(document.getElementById('width').value);
+  let r = parseFloat(document.getElementById('radius').value);
 
-  let area = l * w;
+  let area = Math.PI * r ** 2;
 
   document.getElementById('output').innerHTML = 'The area is: ' + area;
 }
