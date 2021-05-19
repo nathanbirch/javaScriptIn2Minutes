@@ -1,6 +1,6 @@
 function computeAreaOfRectangle() {
-  let l = document.getElementById('length').nodeValue;
-  let w = document.getElementById('width').nodeValue;
+  let l = parseFloat(document.getElementById('length').value);
+  let w = parseFloat(document.getElementById('width').value);
 
   let area = l * w;
 
