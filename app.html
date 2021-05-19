@@ -3,27 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Nathan Birch">
-		<title>5.6 - Mileage</title>
+		<title>Heart Rate</title>
 		<style>
-			#outputDiv {
-		        width:60%; 
-		        margin-left:20%; 
-		        text-align:center; 
-		        padding-top:20px;
-		        font-size:200%;
-		        color:blue;
-		      }
+			body {
+				width:80%;
+				margin-left:10%;
+				text-align:center;
+			}
 		</style>
 		<script src="app.js"></script>
 	</head>
-	<body>                             
-	    Please enter the starting odometer reading: <input type="text" id="odometerStart">
-	    <br>
-	    Please enter the ending odometer reading: <input type="text" id="odometerEnd">
-	    <br>
-	    Please enter the number of gallons used <input type="text" id="gallonsUsed">
-	    <br>
-	    <button type="button" onclick="calculateMileage()">Calculate Mileage</button>
-	    <div id="outputDiv"></div>
-	</body>  
+	<body>
+		<h1>Strengthen Your Heart</h1>
+		<input type="text" id="userAge">
+		<br><br>
+		<button onclick="getHealthyRange()">Check my Heart Rate</button>
+		<div id="outputDiv"></div>
+	</body>
 </html>
