@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Nathan Birch">
-		<title>Cable Length</title>
+		<title>Calculate Torus Volume</title>
 		<style>
 			body {
 				width:80%;
@@ -14,11 +14,11 @@
 		<script src="app.js"></script>
 	</head>
 	<body>
-		<h1>Calculating the Length a Cable Must Be</h1>
-		distance the cable must span: <input type="text" id="span"><br>
-		distance the cable will sag: <input type="text" id="sag"><br>
+		<h1>Calculate Torus Volume</h1>
+		Inner Radius: <input type="text" id="inner"><br>
+		Outer Radius: <input type="text" id="outer">
 		<br><br>
-		<button onclick="computeLengthOfCable()">Run Function</button>
+		<button onclick="calculateTorusVolume()">Volume</button>
 		<div id="outputDiv"></div>
 	</body>
 </html>
