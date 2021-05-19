@@ -3,22 +3,27 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Nathan Birch">
-		<title>Class Teams</title>
+		<title>5.6 - Mileage</title>
 		<style>
-			body {
-				width:80%;
-				margin-left:10%;
-				text-align:center;
-			}
+			#outputDiv {
+		        width:60%; 
+		        margin-left:20%; 
+		        text-align:center; 
+		        padding-top:20px;
+		        font-size:200%;
+		        color:blue;
+		      }
 		</style>
 		<script src="app.js"></script>
 	</head>
-	<body>
-		<h1>Teams of Students</h1>
-		Total Number of Students: <input type="text" id="students"><br>
-		Number of Teams:          <input type="text" id="teams">
-		<br><br>
-		<button onclick="getTeams()">Teams</button>
-		<div id="outputDiv"></div>
-	</body>
+	<body>                             
+	    Please enter the starting odometer reading: <input type="text" id="odometerStart">
+	    <br>
+	    Please enter the ending odometer reading: <input type="text" id="odometerEnd">
+	    <br>
+	    Please enter the number of gallons used <input type="text" id="gallonsUsed">
+	    <br>
+	    <button type="button" onclick="calculateMileage()">Calculate Mileage</button>
+	    <div id="outputDiv"></div>
+	</body>  
 </html>
