@@ -1,4 +1,4 @@
-function computeAreaOfRectangle() {
+function computeAreaOfCircle() {
   let l = parseFloat(document.getElementById('length').value);
   let w = parseFloat(document.getElementById('width').value);
 
