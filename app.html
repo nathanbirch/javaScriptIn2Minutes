@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Nathan Birch">
-		<title>After-tax Pay</title>
+		<title>Cable Length</title>
 		<style>
 			body {
 				width:80%;
@@ -11,14 +11,14 @@
 				text-align:center;
 			}
 		</style>
-        <script src="app.js"></script>
+		<script src="app.js"></script>
 	</head>
 	<body>
-        <h1>After-tax Pay</h1>
-		Hours Worked:<input type="text" id="hours"><br>
-		Employee Wage:<input type="text" id="wage"><br>
+		<h1>Calculating the Length a Cable Must Be</h1>
+		distance the cable must span: <input type="text" id="span"><br>
+		distance the cable will sag: <input type="text" id="sag"><br>
 		<br><br>
-		<button onclick="calculatePay()">Calculate Pay</button>
+		<button onclick="computeLengthOfCable()">Run Function</button>
 		<div id="outputDiv"></div>
 	</body>
 </html>

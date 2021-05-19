@@ -1,9 +1,6 @@
-// assume tax removes 15%
-function calculatePay() {
-  let hours = parseFloat(document.getElementById('hours').value);
-  let wage = parseFloat(document.getElementById('wage').value);
-
-  let pay = hours * wage * 0.85;
-
-  document.getElementById('outputDiv').innerHTML = '$' + pay.toLocaleString();
-}
+// https://www.easycalculation.com/engineering/electrical/cable-length-cable-span.php
+// L = S + ((8 * d2) / (3 * S))
+// Where,
+// L = Cable Length
+// S = Cable Span
+// d = Cable Sag
