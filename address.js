@@ -9,7 +9,7 @@ function createAddress() {
 
   address += name + '<br>';
   address += street + '<br>';
-  address += city + ', ' + state + ', ' + zip;
+  address += city + ', ' + state + ' ' + zip;
 
   document.getElementById('output').innerHTML = address;
 }
