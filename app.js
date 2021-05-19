@@ -3,6 +3,7 @@ function computeAreaOfCircle() {
 
   let area = Math.PI * r ** 2;
 
-  document.getElementById('output').innerHTML =
-    'The radius: ' + r + ' produces an area of: ' + area.toFixed(2);
+  document.getElementById(
+    'output'
+  ).innerHTML = `The radius: ${r} produces an area of: ${area.toFixed(2)}`;
 }
