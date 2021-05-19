@@ -1,15 +1,15 @@
-function getTeams() {
-  let students = parseFloat(document.getElementById('students').value);
-  let teams = parseFloat(document.getElementById('teams').value);
+function calculateMileage() {
+  let odometerStart = parseFloat(
+    document.getElementById('odometerStart').value
+  );
+  let odometerEnd = parseFloat(document.getElementById('odometerEnd').value);
+  let gallonsUsed = parseFloat(document.getElementById('gallonsUsed').value);
 
-  let remainder = students % teams;
-  let studentsPerTeam = Math.floor(students / teams);
+  let distance = odometerEnd - odometerStart;
 
-  let message = teams - remainder + ' teams of ' + studentsPerTeam;
+  let mileage = distance / gallonsUsed;
 
-  if (remainder) {
-    message += ' and ' + remainder + ' teams of ' + (studentsPerTeam + 1);
-  }
-
-  document.getElementById('outputDiv').innerHTML = message;
+  var unnecessaryOutputString =
+    'Congrats! You got ' + Math.round(mileage) + ' miles per gallon!';
+  document.getElementById('outputDiv').innerHTML = unnecessaryOutputString;
 }
