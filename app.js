@@ -4,5 +4,5 @@ function computeAreaOfRectangle() {
 
   let area = l * w;
 
-  document.getElementById('output').innerHTML = area;
+  document.getElementById('output').innerHTML = 'The area is: ' + area;
 }
